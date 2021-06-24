@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --primary: #000;
+    --background: #CCC;
+    --snake: hsl(200, 100%, 50%);
+    --food: hsl(50, 100%, 50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--primary);
+    color: var(--primary);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    background-color: var(--background);
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+
+.snake {
+    background-color: var(--snake);
+    border: 0.235vmin solid var(--primary);
+}
+
+.food {
+    background-color: var(--food);
+    border: 0.235vmin solid var(--primary);
+}
